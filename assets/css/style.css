@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+@font-face { font-family: ‘SF Pro Display’; font-style: normal; font-weight: 100; src:
+url(“./SF-Pro-Display-Ultralight.otf”) format(“opentype”)}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('img/pattern-top.png');
+    background-repeat: no-repeat;
+    font-family: 'Inter', 'sans-serif';
+    height: 100vh;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 20px 50px 0px 100px;
+    top: 0;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header .nav-logo img {
+    max-width: 70px;
+    height: auto;
+}
+
+header .hamburger-menu {
+    display: none;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+header ul a {
+    text-decoration: none;
+    color: #51466B;
+}
+
+
+#intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 100px;
+}
+
+#intro .title {
+    max-width: 528px;
+    width: 100%;
+    height: auto;
+}
+
+#intro .title h1 {
+    font-weight: 600;
+    font-size: 3vw;
+    color: #51466B;
+}
+
+.orange {
+    color: #FF8A2F;
+}
+
+#intro .title p {
+    color: #51466B;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+#intro img {
+    padding-top: 100px;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+
+hr {
+    height: 1px;
+    border: #FF8A2F;
+    background-color: #FF8A2F;
+    margin: 30px 0px 0px;
+}
+
+
+.primary-btn {
+    padding: 15px 40px;
+    background: #51466B;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+
+
+#step-list .step-title {
+    color: #333333;
+    margin: 100px 100px;
+}
+
+#step-list .step-title h2 {
+    font-weight: 600;
+}
+
+#step-list .step-title h4 {
+    letter-spacing: 1.2px;
+    font-weight: 500;
+}
+
+#step-list .step-title span {
+    color: #51466B;
+}
+
+#step-list .step-by {
+    display: flex;
+    flex-direction: row;
+    margin-left: 60px;
+    list-style: none;
+    text-align: justify;
+    color: #333333;
+}
+
+#step-list .step-by .step-1 {
+    background-image: url('img/step-line.png');
+    background-repeat: no-repeat;
+}
+
+.step-by .step-1 p {
+    padding-right: 120px;
+}
+
+.step-by .step-2 {
+    padding-top: 130px;
+    background-image: url('img/step-line-2.png');
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.step-by .step-2 p {
+    padding-right: 100px;
+}
+
+.step-by .step-3 {
+    margin-top: -10px;
+    background-image: url('img/step-line-3.png');
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.step-by .step-3 p {
+    padding-right: 100px;
+}
+
+#step-list .step-by img {
+    max-width: 40px;
+    width: 100%;
+    height: auto;
+}
+
+#step-list .step-by h3 {
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    color: #51466B;
+}
+
+
+.bottom {
+    background-image: url('img/pattern-bottom.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;   
+}
+
+#community {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding-left: 100px;
+    background-image: url('img/pattern-community.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;   
+}
+
+#community .content {
+    display: flex;
+    align-items: center;
+}
+
+#community article {
+    max-width: 400px;
+    margin-right: 50px;
+}
+
+#community article p, h2 {
+    text-align: justify;
+    color: #333333;
+}
+
+#community .community-card ul {
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+    gap: 3em;
+}
+
+.community-card li {
+    border-radius: 30px;
+    padding: 60px 40px;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.community-card .purple-card {
+    background-color: #51466B;
+    color: white;
+    background-image: url('img/pattern-card.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.community-card .white-card {
+    border: 1px solid #C6C6C6;
+    color: #333333;
+}
+
+.community-card p {
+    text-align: justify;
+    font-size: 15px;
+    padding: 0px 0px 40px 0px;
+}
+
+
+#feature-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#feature-list .title h3 {
+    font-weight: 500;
+}
+
+#feature-list .title h1 {
+    font-size: 30px;
+}
+
+#feature-list .title {
+    text-align: center;
+    color: #51466B;
+}
+
+.feature-card li {
+    border: 2px solid #C6C6C6;
+    border-radius: 30px;
+    padding: 30px 40px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.feature-card li:hover {
+    box-shadow: 1px 4px 10px 1px rgba(0, 0, 0, 0.18);
+}
+
+#feature-list .feature-card {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 200px 250px;
+    justify-content: center;
+    align-content: center;
+    margin: 50px 100px;
+    color: #333333;
+}
+
+#feature-list .feature-card h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.feature-card li:nth-child(1) { 
+    grid-column: 1 / 9;  
+    grid-row: 1 / 2; 
+}
+
+.feature-card li:nth-child(2) { 
+    grid-column: 9 / 15;  
+    grid-row: 1 / 3; 
+}
+
+.feature-card li:nth-child(3) { 
+    grid-column: 1 / 6; 
+    grid-row: 2 / 4; 
+}
+
+.feature-card li:nth-child(4) { 
+    grid-column: 6 / 9;  
+    grid-row: 2 / 3; 
+}
+
+.feature-card li:nth-child(5) { 
+    grid-column: 6 / 15; 
+    grid-row: 3 / 4; 
+}
+
+.feature-card .quiz {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.feature-card .quiz img {
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+}
+
+.feature-card .insight, .tracker {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    text-align: right;
+}
+
+.feature-card .insight img {
+    max-width: 300px;
+}
+
+.feature-card .tracker img {
+    max-width: 250px;
+}
+
+.feature-card .community {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: end;
+}
+
+.feature-card .community img {
+    max-width: 250px;
+}
+
+.feature-card .challenge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #FF8A2F;
+    border: none;
+}
+
+.feature-card .challenge h1 {
+    color: white;
+}
+
+#feature-list .feature-card {
+    list-style: none;
+    padding: 0;
+}
+
+
+#try-now {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 50px 0px 0px 100px;
+    padding-bottom: 100px;
+}
+
+#try-now .caption h1 {
+    color: #51466B;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+#try-now .photo img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    border-top: 1px solid #C6C6C6;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+
+footer h4 {
+    font-weight: 400;
+    color: #C6C6C6;
+}
+
+@media only screen and (max-width: 768px) {
+    header .hamburger-menu {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 20px;
+        color: #51466B;
+    }
+
+    header nav {
+        padding: 30px;
+    }
+
+    header #nav-items {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        justify-content: end;
+        margin-top: 170px;
+        right: 10px;
+        align-items: center;
+        z-index: 999;
+
+        background: white;
+        padding: 20px 10px;
+        border: 1px solid #C3C3C3;
+        border-radius: 15px;
+    }
+
+    header .nav-logo {
+        top: 20px;
+        position: fixed;
+    }
+
+    #intro {
+        flex-direction: column-reverse;
+        margin-left: 20px;
+    }
+
+    #intro .title {
+        padding-right: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #intro .title h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #intro img {
+        max-width: 300px;
+        right: 0;
+    }
+
+    .primary-btn {
+        display: flex;
+        margin: auto;
+    }
+
+    #step-list .step-title {
+        margin: 100px 30px;
+    }
+
+    #step-list .step-by {
+        flex-direction: column;
+        margin-left: 30px;
+        gap: 2rem;
+    }
+
+    #step-list .step-by .step-2 {
+        padding: 0;   
+    }
+
+    .step-by .step-1 p {
+        padding-right:30px;
+    }
+
+    #step-list .step-by .step-1,
+    #step-list .step-by .step-2,
+    #step-list .step-by .step-3 {
+        background-image: none;
+    }
+
+    .step-by .step-2 p {
+        padding-right: 30px;
+    }
+
+    .step-by .step-3 p {
+        padding-right: 30px;
+    }
+
+    #community .content {
+        flex-direction: column;
+    }
+
+    .community-card li {
+        max-width: 350px
+    }
+
+    #community article {
+        margin: 0;
+    }
+
+    #feature-list .feature-card {
+        margin: 50px 30px;
+    }
+
+    .feature-card li:nth-child(1) { 
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: right;
+        gap: 4rem;
+        grid-column: 1 / 15;  
+        grid-row: 1 / 3; 
+    }
+    
+    .feature-card li:nth-child(2) { 
+        text-align: left;
+        grid-column: 1 / 15;  
+        grid-row: 3 / 5; 
+    }
+    
+    .feature-card li:nth-child(3) { 
+        grid-column: 1 / 15; 
+        grid-row: 5 / 7; 
+    }
+    
+    .feature-card li:nth-child(4) { 
+        grid-column: 1 / 15;  
+        grid-row: 7 / 8; 
+    }
+    
+    .feature-card li:nth-child(5) { 
+        flex-direction: column;
+        grid-column: 1 / 15; 
+        grid-row: 8 / 10; 
+    }
+
+    #community .community-card {
+        max-width: 400px;
+    }
+
+    .community-card ul {
+        padding-left: 0px;
+    }
+
+    #try-now {
+        flex-direction: column-reverse;
+        margin-left: 30px;
+    }
+
+}
